@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MSIB_Imuslih</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container"> 	
+		<div class="header">
+			<h1 class="judul">MyWebsite</h1>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="galery.html">Gallery</a></li>
+				<li><a href="#">Carrier</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+		</div>
+
+		<div class="hero"></div>
+		<div class="content cf">
+			<div class="main">
+				<h2>Judul Artikel</h2>
+				<p class="penulis">ditulis oleh <a href="galery.html">Mukhamad Imam Muslih</a> pada <?php echo date("d-M-Y");?></p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima modi sint, perspiciatis eligendi ex corporis consequatur aliquid accusantium sunt consectetur quaerat incidunt, ut in quae! Dolorem autem commodi quibusdam libero.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium tempora laborum, modi perferendis est sapiente alias veritatis ratione ipsa consectetur, illo quo eaque eius quas, architecto dolorum nobis nemo voluptatibus. Dolorum minima, modi enim. Rem voluptate, nam inventore facilis aperiam minima autem non similique, quod quaerat laudantium earum vero consequatur natus qui aspernatur beatae commodi odio exercitationem voluptatum saepe itaque nemo, soluta. Aliquid praesentium, totam dolor magnam, consequuntur quos veritatis repellendus harum reiciendis voluptatibus corporis in? Voluptatibus perferendis, iusto ducimus explicabo rerum incidunt sapiente natus sit molestias, libero, odio dolore modi nesciunt dolorum magni veritatis possimus fugit corporis. Corporis, accusamus.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sed sapiente, magnam rem recusandae optio eos illo. Aliquam cumque quidem nulla, dolorum unde debitis! Voluptatem eos aut culpa, consequatur hic reprehenderit nam facere illo, sed sint, at similique fugit aliquam perferendis nobis modi consectetur dignissimos nisi placeat optio incidunt explicabo rerum. Accusamus ratione earum repellendus dignissimos quam minima facere nobis aliquid nihil, eligendi sunt eveniet? Impedit atque perferendis necessitatibus totam laborum dignissimos distinctio, ut nemo?</p>
+			</div>
+			<div class="sidebar">
+				<h3>Tentang Penulis</h3>
+				<img src="img/penulis.png" alt="Mukhamad Imam Muslih">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis numquam officia accusantium fuga nostrum labore voluptate est, obcaecati ea adipisci debitis minima odio dolor. Blanditiis impedit cum nam libero tenetur consequuntur quaerat dolore soluta eum, ad quasi voluptatum, beatae ratione dicta, ea vel nulla. Quibusdam quas quis, consequuntur ipsa quos asperiores beatae autem ea reprehenderit sequi provident minus architecto a iusto consequatur blanditiis nostrum illum nulla debitis, possimus odio ipsum!</p>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<p class="copy">Copyright Imuslih 2023</p>
+		</div>
+	</div>
+
+</body>
+<script>
+	alert('Selamat Datang di Website IndoMei, Selamat Bersenang Ria :) :)')
+</script>
+</html>

@@ -1,0 +1,149 @@
+/* Font */
+@font-face{
+	font-family: 'BebasNeue';
+	src: url(../fonts/BebasNeue-Regular.woff) format('woff');
+}
+
+/* Style Utama */
+body {
+	font: 18px/36px 'BebasNeue', 'Arial Narrow', Arial, sans-serif;
+	background-color: #ccc;
+}
+
+h1{
+	font-size: 80px;
+	margin: 50px 0;
+	text-align: center;
+	text-shadow: 2px 2px 2px white;
+}
+
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+
+.container{
+	width: 600px;
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0px 0px 5px 3px #404040;
+	border-radius: 5px;
+}
+
+
+
+.gallery li{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	/*overflow: hidden;*/
+	border: 2px solid #b5b5b5;
+	float: left;
+	margin-right: 26px;
+	position: relative;
+}
+
+.gallery a img{
+	border-radius: 50%;
+}
+
+.gallery li span{
+	display: block;
+	width: 120px;
+	height: 120px;
+	background-color: rgba(200,200,200,.5);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 120px;
+	color: #333;
+	opacity: 0;
+	transform: scale(0) rotate(0);
+	transition: .3s;
+}
+
+.gallery li a:hover span{
+	opacity: 1;
+	transform: scale(1) rotate(360deg);
+}
+
+.clear{
+	clear: both;
+}
+
+/* Overlay*/
+.overlay{
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: .5s;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.8);
+}
+
+.overlay img {
+	max-height: 100%;
+	border: 2px solid #ccc;
+	border-radius: 15px;
+}
+
+.overlay:target img {
+	animation: zoomDanFade .7s;
+}
+
+.overlay .close {
+	position: absolute;
+	top: 69px;
+	left: 50%;
+	margin-left: -25px;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	border: 1px solid white;
+	line-height: 15px;
+	padding: 5px;
+	opacity: 0;
+}
+
+/* Navigasi*/
+
+.next {
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/right.png);
+	position: absolute;
+}
+
+/* Animasi Overlay*/
+
+@keyframes zoomDanFade {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1; 
+	}
+}
